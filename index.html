@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Vue.Js Aula 1</title>
+        <meta charset="uf8">
+        <meta name="description" content="Vue.js aula um">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <style>
+            body{
+                color: #292d3e;
+                text-align: center;
+                background: #42b883;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="app">
+            <h1>{{message}}</h1>
+            <h2>{{dia}}</h2>
+        </div>
+
+
+
+       <script src="https://unpkg.com/vue@3"></script>
+
+       <script>
+            Vue.createApp({
+              data() {
+                return {
+                  message: 'Seja bem vindo a minha stack,Vue!',
+                  dia : '09/02/2022'
+                }
+              }
+            }).mount('#app')
+          </script>
+        
+    </body>
+</html>
+
